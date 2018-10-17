@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     @IBAction func addFood(){
         let name=nameField.text
         let happiness=happinessField.text
-        print("Eu comi \(name) e minha felicidade foi \(happiness)");
+        print("Eu comi \(name!) e minha felicidade foi \(happiness!)");
     }
     //Comment for commit
 }
