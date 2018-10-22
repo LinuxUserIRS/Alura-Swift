@@ -21,12 +21,19 @@ class ViewController: UIViewController {
     }
 
     //Swift força todas as variavéis a terem um valor inicial. Essa variavél do campo de texto só vai ter valor em tempo de execução, mas não de compilação. Então colocamos uma exclamação pra dizer ao compilador que ela é opcional. Dizemos ao compilador para confiar no programador.
-    @IBOutlet var nameField:UITextField!
-    @IBOutlet var happinessField:UITextField!
+    @IBOutlet var nameField:UITextField?
+    @IBOutlet var happinessField:UITextField?
     @IBAction func addFood(){
-        let name=nameField.text
-        let happiness=happinessField.text
-        print("Eu comi \(name!) e minha felicidade foi \(happiness!)");
+        if( nameField == nil || happinessField == nil){
+            return
+        }
+        let name:String=nameField!.text!
+        if let happiness=Int(happinessField!.text!){
+            let meal=Meal(name:name, happiness: happiness)
+            print("Eu comi \(meal.name) e minha felicidade foi \(meal.happiness)");
+        }
+        
+        
     }
     //Comment for commit
 }
