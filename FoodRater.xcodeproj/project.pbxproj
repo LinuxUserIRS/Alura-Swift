@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AB54ABD6217E090700021887 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54ABD5217E090700021887 /* Meal.swift */; };
 		AB54ABD8217E094E00021887 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB54ABD7217E094E00021887 /* Item.swift */; };
+		AB5C539D217F3C270048354C /* MealsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5C539C217F3C270048354C /* MealsTableController.swift */; };
 		ABF4725C2176614D006E8151 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4725B2176614D006E8151 /* AppDelegate.swift */; };
 		ABF4725E2176614D006E8151 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF4725D2176614D006E8151 /* ViewController.swift */; };
 		ABF472612176614D006E8151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF4725F2176614D006E8151 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		AB54ABD5217E090700021887 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		AB54ABD7217E094E00021887 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		AB5C539C217F3C270048354C /* MealsTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsTableController.swift; sourceTree = "<group>"; };
 		ABF472582176614D006E8151 /* FoodRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABF4725B2176614D006E8151 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABF4725D2176614D006E8151 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				ABF4725D2176614D006E8151 /* ViewController.swift */,
+				AB5C539C217F3C270048354C /* MealsTableController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				AB54ABD8217E094E00021887 /* Item.swift in Sources */,
 				ABF4725E2176614D006E8151 /* ViewController.swift in Sources */,
+				AB5C539D217F3C270048354C /* MealsTableController.swift in Sources */,
 				AB54ABD6217E090700021887 /* Meal.swift in Sources */,
 				ABF4725C2176614D006E8151 /* AppDelegate.swift in Sources */,
 			);
