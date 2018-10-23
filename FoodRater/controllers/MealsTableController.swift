@@ -15,11 +15,15 @@ class MealsTableController: UITableViewController{
     /*Antes da view de adicionar ser criada e mostrada, crio uma variável
      que guarda uma referência para o destino da ação, no caso, a view de adicionar a comida, então passo o valor da variável mealsTable como uma referência para este controller aqui.*/
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let view:ViewController=segue.destination as! ViewController
-        view.mealsTable=self
+        if(segue.identifier=="addMeal"){
+            let view:ViewController=segue.destination as! ViewController
+            view.mealsTable=self
+        }
+        
     }
     //Função que adiciona um refeição no array e dá refresh na tabela quando um alimnto é adicionado
-    func addMeal(meal: Meal){
+    //Underline quer dizer que não é necessário colocar o nome do parâmetro quando for usar a função
+    func addMeal(_ meal: Meal){
         meals.append(meal)
         tableView.reloadData()
     }

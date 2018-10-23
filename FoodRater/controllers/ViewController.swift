@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             }
             //Chamando a função que adiciona a refeição no array do controller
             //da tabela
-            mealsTable!.addMeal(meal: meal)
+            mealsTable!.addMeal(meal)
         }
         //Tirando a última view do stack
         navigationController?.popViewController(animated: true)

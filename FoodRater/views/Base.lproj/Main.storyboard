@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" id="Cxl-Js-dS5">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="RhX-Jy-wpc">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="nwZ-ln-odO"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="addMeal" id="nwZ-ln-odO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
