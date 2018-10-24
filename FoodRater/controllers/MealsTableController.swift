@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MealsTableController: UITableViewController{
+class MealsTableController: UITableViewController, ViewControllerDelegate{
     //Criando array que vai segurar as refeições
     var meals = [Meal(name: "Pizza", happiness: 4),
                  Meal(name: "Salada", happiness: 5)]
@@ -17,7 +17,7 @@ class MealsTableController: UITableViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier=="addMeal"){
             let view:ViewController=segue.destination as! ViewController
-            view.mealsTable=self
+            view.delegate=self
         }
         
     }
