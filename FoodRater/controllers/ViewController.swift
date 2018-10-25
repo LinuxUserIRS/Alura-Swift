@@ -8,7 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    var itens = [Item(name: "Eggplant", calories: 10),
+                 Item(name: "Brownie", calories: 10),
+                 Item(name: "Zucchini", calories: 10),
+                 Item(name: "Muffin", calories: 10),
+                 Item(name: "Coconut oil", calories: 500),
+                 Item(name: "Chocolate frosting", calories: 1000),
+                 Item(name: "Chocolate chip", calories: 1000)]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itens.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell=UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: nil)
+        cell.textLabel?.text=itens[indexPath.row].name
+        return cell
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +63,5 @@ class ViewController: UIViewController {
         
         
     }
-    //Comment for commit
 }
 
